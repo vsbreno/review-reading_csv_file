@@ -26,7 +26,11 @@ public class Program {
 			//A cada próxima linha que o leitor encontrar, ele irá jogar na String
 			linhasDoArquivo = leitor.nextLine();
 			
-			System.out.println(linhasDoArquivo);
+			//Cada vez que o programa encontrar uma vírgula, ele cria uma posição no vetor
+			String[] valoresEntreVirgulas = linhasDoArquivo.split(",");
+			
+			
+			System.out.println(valoresEntreVirgulas[0] + " - " + valoresEntreVirgulas[1]);
 			}
 			
 		}
